@@ -20,3 +20,13 @@ plugins {
     id("com.android.library") version "8.6.0" apply false
     id("org.jetbrains.kotlin.android") version "1.9.22" apply false
 }
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Declare the lifecycle_version as an extra property
+extra["lifecycle_version"] = "2.5.1"
